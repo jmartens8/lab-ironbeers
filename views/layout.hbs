@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{doctitle}}</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/beers">Beers</a>
-        <a href="/random-beer">Random-beer</a>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/beers">Beers</a>
+            <a href="/random-beer">Random-beer</a>
+        </div>
     </nav>
-    {{{body}}}
+
+    <div class="content">
+        {{{body}}}
+    </div>
+
+    <footer>
+        <div class="footer">
+            © Jonathan
+        </div> 
+    </footer>
 </body>
 </html>

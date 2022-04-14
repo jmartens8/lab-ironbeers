@@ -1,1 +1,23 @@
-<h1>Test Test if random-beer.hbs is working</h1>
+
+{{> beerpartial randomBeer.[0]}}
+
+{{!-- 
+<img src="{{randomBeer.[0].image_url}}" alt="Beer Logo">
+<h1>{{randomBeer.[0].name}}</h1>
+<h2>{{randomBeer.[0].tagline}}</h2>
+<p>
+    {{randomBeer.[0].description}}
+</p> --}}
+
+<h2>Food Pairing:</h2>
+<ul>
+    {{#each randomBeer.[0].food_pairing}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<div>
+    <h2>Brewers Tips:</h2>
+    <p>{{randomBeer.[0].brewers_tips}}</p>
+</div>
+
