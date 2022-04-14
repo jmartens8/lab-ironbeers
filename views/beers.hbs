@@ -1,0 +1,9 @@
+<h1>Test Test if beers.hbs is working</h1>
+
+{{#each beersList}}
+    <img src="{{this.image_url}}" alt="Beer Logo">
+    <h2>{{this.name}}</h2>
+    <p>{{this.description}}</p>
+    <h4>{{this.tagline}}</h4>
+    
+{{/each}}
